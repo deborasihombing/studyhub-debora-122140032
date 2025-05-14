@@ -6,8 +6,8 @@ Website manajemen buku berbasis **React JS** (Frontend) dan **Python Pyramid + P
 
 ## 👤 Nama & NIM
 
-**Nama:** Yoga Pratama  
-**NIM:** 123456789
+**Nama:** Debora Sihombing
+**NIM:** 122140032
 
 ---
 
