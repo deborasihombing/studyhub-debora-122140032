@@ -1,0 +1,125 @@
+
+
+# ===============================================
+# Python / Backend Specific
+# ===============================================
+
+# Virtual Environment (sesuaikan nama jika berbeda)
+managebook_env/
+
+# Python cache dan bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build artifacts backend (jika ada)
+# backend/build/
+# backend/dist/
+
+# Test coverage
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+
+# Database files (jika menggunakan SQLite untuk development lokal)
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal # Untuk SQLite
+
+# File spesifik Jupyter Notebook jika digunakan
+.ipynb_checkpoints
+
+# ===============================================
+# Node.js / Frontend Specific
+# ===============================================
+
+# Dependency directory (akan mengabaikan semua folder node_modules)
+node_modules/
+
+# Build artifacts frontend (jika ada, Vite biasanya membuat 'dist')
+# frontend/dist/
+# frontend/build/
+# .next/ # Jika menggunakan Next.js
+# .nuxt/ # Jika menggunakan Nuxt.js
+
+# Log files dari package managers frontend
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===============================================
+# File Upload dan Konten Buatan Pengguna
+# ===============================================
+# Direktori ini biasanya berisi file yang diupload saat runtime
+# dan tidak seharusnya menjadi bagian dari source code.
+# Sesuaikan path ini jika direktori upload Anda berbeda.
+# Contoh:
+# backend/static/covers/ # Jika Anda tidak ingin contoh cover masuk ke repo
+# backend/static/profile_pics/ # Jika Anda tidak ingin contoh foto profil masuk ke repo
+# uploads/
+# media/
+
+# ===============================================
+# Global / OS / Editor / IDE Ignores
+# ===============================================
+
+# File environment variables (SANGAT PENTING untuk diabaikan)
+.env
+.env.*
+!.env.example # Anda mungkin ingin menyertakan file contoh .env
+
+# Log umum
+logs/
+*.log
+
+# File spesifik Sistem Operasi
+.DS_Store
+Thumbs.db
+._*
+
+# File spesifik Editor/IDE
+.vscode/
+!.vscode/settings.json # Anda mungkin ingin mempertahankan ini untuk konsistensi tim
+!.vscode/extensions.json # Anda mungkin ingin mempertahankan ini untuk konsistensi tim
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.project
+*.classpath
+*.cpr
+*.launch
+nbproject/ # NetBeans
+*.bak
+*.tmp
+*.swp
+*~
+
+# Build artifacts umum (bisa juga mencakup output backend/frontend)
+build/
+dist/
+
+# Laporan coverage umum
+coverage/
+
+# ===============================================
+# File Lock Dependensi - PENTING: Biasanya DIKOMITMEN!
+# ===============================================
+# File lock (package-lock.json, yarn.lock, poetry.lock, Pipfile.lock)
+# membantu memastikan instalasi dependensi yang konsisten di berbagai lingkungan.
+# Sebaiknya Anda HANYA MENGGUNAKAN SATU JENIS package manager per proyek (npm, yarn, atau pnpm untuk frontend)
+# dan MENGKOMITMEN file lock yang sesuai. Jangan abaikan file lock utama Anda.
+
+# Baris di bawah ini adalah contoh jika Anda secara eksplisit ingin mengabaikan file lock
+# dari package manager lain yang tidak sengaja terbuat. Ini jarang diperlukan jika tim disiplin.
+# yarn.lock
+# pnpm-lock.yaml
+# package-lock.json # Abaikan jika Anda menggunakan yarn atau pnpm secara eksklusif
+
+# Untuk backend Python, jika menggunakan Poetry atau Pipenv:
+# poetry.lock
+# Pipfile.lock
+# (requirements.txt biasanya dikomitmen, bukan diabaikan)
