@@ -1,6 +1,10 @@
 import { useNavigate, useLocation } from "react-router-dom";
 
+<<<<<<< HEAD
 const Header = ({ onLogout, onOpenAddModal }) => {
+=======
+const Header = ({ onLogout }) => {
+>>>>>>> ae07752ed7b289091b74b3eb1ae231b550ccb973
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -16,6 +20,7 @@ const Header = ({ onLogout, onOpenAddModal }) => {
         Manajemen Buku
       </h1>
       <nav className="flex items-center gap-3">
+<<<<<<< HEAD
         {/* Tombol Tambah Buku, yang panggil fungsi modal tambah buku */}
         <button
           onClick={onOpenAddModal}
@@ -24,6 +29,28 @@ const Header = ({ onLogout, onOpenAddModal }) => {
           Tambah Buku
         </button>
 
+=======
+        <button
+          onClick={() => navigate("/books")}
+          className={`px-4 py-2 rounded font-semibold ${
+            location.pathname === "/books" || location.pathname === "/"
+              ? "bg-violet-600 text-white"
+              : "bg-gray-100 hover:bg-violet-100 text-gray-800"
+          }`}
+        >
+          Daftar Buku
+        </button>
+        <button
+          onClick={() => navigate("/add")}
+          className={`px-4 py-2 rounded font-semibold ${
+            location.pathname === "/add"
+              ? "bg-green-600 text-white"
+              : "bg-gray-100 hover:bg-green-100 text-gray-800"
+          }`}
+        >
+          Tambah Buku
+        </button>
+>>>>>>> ae07752ed7b289091b74b3eb1ae231b550ccb973
         <button
           onClick={() => navigate("/profile")}
           className={`px-4 py-2 rounded font-semibold ${
