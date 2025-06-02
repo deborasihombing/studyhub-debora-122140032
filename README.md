@@ -14,9 +14,6 @@ Aplikasi web yang membantu mahasiswa mencatat aktivitas belajar seperti catatan 
 - Frontend: React JS, TailwindCSS
 - API Client: Axios
 
-## Instalasi
-(Akan dilengkapi setelah backend dan frontend selesai)
-
 ## Referensi
 - https://trypyramid.com/
 - https://react.dev/
